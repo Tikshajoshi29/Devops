@@ -11,7 +11,7 @@ Commands -
 git ifconfig                    - set git configuration values(username, email) on a local
 git init                        - Initialize a new git repository in the current directory
 git clone <repo-url>            - download a remote  git repository onto your local 
-git add <filename>                - Stage file for the next commit
+git add <filename>              - Stage file for the next commit
 git add .                       - stages all modified and new files in the directory
 git status                      - show the current state of working directory and staging area
 git commit -m "message"         - save your staged changes with a meassage to the git repository histroy
