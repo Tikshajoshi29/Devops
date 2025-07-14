@@ -1,0 +1,39 @@
+Git and GitHub
+
+Git(local)       - A distributed version control system that tracks changes in source code.
+
+GitHub(remote)   - A cloud-based platform for hosting Git repositories and collaborating on code.
+
+
+
+Commands - 
+
+git ifconfig                    - set git configuration values(username, email) on a local
+git init                        - Initialize a new git repository in the current directory
+git clone <repo-url>            - download a remote  git repository onto your local 
+git add <filename>                - Stage file for the next commit
+git add .                       - stages all modified and new files in the directory
+git status                      - show the current state of working directory and staging area
+git commit -m "message"         - save your staged changes with a meassage to the git repository histroy
+git push                        - uploads local commit to remote repository
+git pull                        - fetch and integrates changes from the remote repository
+git fetch                       - downloads commits and refrences(branches and tags) from remote repository
+git remote -v                   - display the list of remote connections with url
+git remote add origin <url>     - add a remote named origin
+git diff                        - show unstaged changes or display line by line comparison
+git rebase <branch>             - sync local and remote
+git branch                      - list, create and delete branches in local git repository
+git branch <name>               - create a new branch
+git checkout <branch>           - switches to the specified branch
+git checkout -b <branch>        - create a new branch and switch to it in different branch
+git merge branch                - combine changes from one branch to another branch
+git stash                       - temporary save uncommitted changes not yet committed
+git revert                      - undo a specific commit by creating a new commit that reserved the changes introduced by that commit
+git reset                       - unstages a staged file
+.gitignore                      - Used to tell Git which files or folders to ignore — meaning not track or commit
+
+Merge Conflict-
+A merge conflict happens when Git tries to merge two branches, but the same part of the same file was changed differently in both branches, so Git doesn’t know which version to keep.     -Edit the file
+
+Pull request-
+A Pull Request (PR) is a way to propose changes you've made on a branch (usually a feature or bugfix branch) to be reviewed and merged into another branch (commonly main or master) on GitHub.
