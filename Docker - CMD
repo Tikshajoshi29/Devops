@@ -1,0 +1,57 @@
+Docker - Docker is a tool that allows you to package an application along with all its dependencies (like libraries, system tools, and code) into a container.
+
+Image - A Docker image is a read-only template that contains the instructions and all the files needed to create a container, including the application code, libraries, and dependencies.
+
+Container -A container is a lightweight, portable package that runs an application and its dependencies in an isolated environment.
+
+Engine - The Docker Engine is the core software that runs and manages Docker containers. It handles building images, starting/stopping containers, and managing resources.
+
+Docker architecture - 
+1. Docker Client – Sends commands to Docker Daemon to build, run, and manage containers.
+2. Docker Daemon (Engine) – Performs tasks like building, running, and managing containers and Runs in the background as a service.
+3. Docker Image – A read-only template with application code and dependencies.
+4. Docker Container – A running instance of an image, isolated environment and lightweight.
+5. Docker Registry – A storage location where Docker images are stored and shared.
+
+Command -
+
+docker pull <image>                                    - Downloads an image from Docker Hub to your system.
+
+docker image ls                                        - Lists all downloaded Docker images on your system.
+
+docker container ls                                    -Lists all running containers.
+
+docker run <image>                                     - Creates and starts a container from a Docker image.
+
+docker run --name <name> <image>                       - Runs a container with a custom name.
+
+docker run -d <image>                                  - Runs the container in detached (background) mode.
+
+docker run --rm <image>                                - Runs a container and automatically removes it after it stops.
+
+docker ps                                              - Shows running containers.
+
+docker ps -a                                           - Shows all containers, including stopped ones.
+
+docker ps -l                                           -shows us the latest container.
+
+docker stop <container>                                - Stops a running container.
+
+docker start <container>                               -Starts a stopped container.
+
+docker restart <container>                             -Restarts a container.
+
+docker exec -it <container> <command>                  -Executes a new command inside a running container.
+    -i - it will keep STDIN open even when not attached.
+    -t - allocates a pseudo-terminal for shell-like behavior.
+    -d - for running the commands in the background.
+
+docker inspect <container/image>                        -Displays detailed info about a container or image.
+
+docker rm <container>                                   -Removes one or more stopped containers.
+   -f - remove the container forcefully.
+
+docker rmi <image>                                        -Removes one or more Docker images.
+
+
+
